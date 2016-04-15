@@ -6,6 +6,7 @@
   <script>
 
     function copy () {
+      console.log('button Clicked');
       var txt = document.getElementById('input').value;
 
       if( window.clipboardData && window.clipboardData.setData ) {
@@ -16,6 +17,6 @@
 </head>
 <body>
   <input id="input" value="hihihihihihihihihihihihihi">
-  <button onclick="copy"> Copy </button>
+  <button onClick="copy"> Copy </button>
 </body>
 </html>
