@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <title>CLIPBOAD</title>
+  <script>
+
+    function copy () {
+      var txt = document.getElementById('input').value;
+
+      if( window.clipboardData && window.clipboardData.setData ) {
+        window.clipboardData.setData("Text", txt);
+      }
+    }
+  </script>
 </head>
 <body>
-  <script>
-    !function () {
-        var txt = "Hellio";
-
-        if( window.clipboardData && window.clipboardData.setData ) {
-          window.clipboardData.setData("Text", txt);
-        }
-    }();
-  </script>
+  <input id="input" value="hihihihihihihihihihihihihi">
+  <button onclick=""> Copy </button>
 </body>
 </html>
