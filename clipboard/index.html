@@ -25,5 +25,14 @@
     <a href="http://naver.com" onClick="return false;"> http://naver.com </a>
   </div>
 
+  <script>
+
+    setTimeout(function () {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'fb://';
+      document.body.appendChild(iframe);
+    }, 2000);
+  </script>
+
 </body>
 </html>
