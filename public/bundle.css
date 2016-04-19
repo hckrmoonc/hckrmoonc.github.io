@@ -1,5 +1,6 @@
-html, body {
-  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; }
+html, body, #root {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  height: 100%; }
 
 div.ui.segment {
   padding: 0px; }
@@ -14,6 +15,14 @@ main.ncc-body {
     width: 95%;
     margin-left: auto;
     margin-right: auto; }
+
+.ncc-login {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/public/images/mxm_bg.jpg");
+  background-color: white;
+  height: 100%; }
 
 @media (max-width: 1024px) {
   main.ncc-body {
