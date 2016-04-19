@@ -1,0 +1,63 @@
+html, body {
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif; }
+
+div.ui.segment {
+  padding: 0px; }
+
+div.ui.grid {
+  margin: 0px; }
+
+main.ncc-body {
+  margin-left: 210px;
+  padding-top: 30px; }
+  main.ncc-body > div {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto; }
+
+@media (max-width: 1024px) {
+  main.ncc-body {
+    margin: 80px auto; }
+    main.ncc-body > div {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+@media (max-width: 760px) {
+  main.ncc-body {
+    margin: 80px auto; }
+    main.ncc-body > div {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.ncc-sidebar {
+  font-size: 16px !important; }
+  .ncc-sidebar .item .menu i.icon {
+    float: left !important;
+    margin-right: 7px !important; }
+  .ncc-sidebar a.ui.logo {
+    width: 35px;
+    margin-right: 5px; }
+  .ncc-sidebar a.item.active {
+    background: grey !important; }
+  .ncc-sidebar .user-profile .header img {
+    width: 50px;
+    border-radius: 35px;
+    margin-right: 10px; }
+  .ncc-sidebar .user-profile div.dropdown .menu div.item {
+    color: black !important; }
+
+@media (max-width: 1024px) {
+  .ncc-sidebar {
+    display: none !important; } }
+
+@media (min-width: 1024px) {
+  .ncc-header {
+    display: none !important; } }
+
+.ncc-dashboard .ui.bottom.tab {
+  padding: 12px; }
+
+.ncc-briefWebtoonList .ui.segment {
+  padding: 5px; }
