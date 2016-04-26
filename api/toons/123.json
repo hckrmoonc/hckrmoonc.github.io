@@ -1,0 +1,36 @@
+{
+  "value":{
+    "toon_no":123,
+    "update_period_cd":"WEEK",
+    "update_period_dt":7,
+    "series_upd_dt":1413288585000,
+    "title":"음속의 저격소녀",
+    "sub_title":"마스터 이노윈",
+    "image_home":"http://akstatic.plaync.com/MXM/global/img/webtoon/cover_thewild.png",
+    "image_new":"http://akstatic.plaync.com/MXM/global/img/webtoon/cover_thewild.png",
+    "image_list":"http://akstatic.plaync.com/MXM/global/img/webtoon/cover_thewild.png",
+    "image_character":"http://akstatic.plaync.com/MXM/global/img/webtoon/cover_thewild.png",
+    "author":[
+      {
+        "author_no":321,
+        "author_name":"jerome"
+      },
+      {
+        "author_no":322,
+        "author_name":"andy"
+      }
+    ],
+    "ip":[
+      {
+        "ip_no":987,
+        "ip_name":"울랄라"
+      },
+      {
+        "ip_no":988,
+        "ip_name":"버스커"
+      }
+    ]
+  },
+  "message":"OK",
+  "result":"000"
+}

@@ -1,0 +1,45 @@
+{
+  "value": {
+    "series_no": 2,
+    "toon_no": 123,
+    "series_cd": "NORMAL",
+    "title": "2화 음속의 저격소녀",
+    "image": "http://static.plaync.co.kr/gaiaupload/MXM_KR/bbs/201602/I_220160223100903.jpg",
+    "contents": [
+      {
+        "order": 1,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111040-uTaSzX1Z1BuiblN0AS0m0-v4"
+      },
+      {
+        "order": 2,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111042-ZFyHrCAUok3N3UEOqE4X0-v4"
+      },
+      {
+        "order": 3,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111044-afSUXrMROj4YtfTw6Ixa0-v4"
+      },
+      {
+        "order": 4,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111046-RQKqnlh2xB4dDWeVoGns0-v4"
+      },
+      {
+        "order": 5,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111049-K52U2VcLwWCcAnTOYntd0-v4"
+      },
+      {
+        "order": 6,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111051-41LA9LQYeogzM5R7ey9i0-v4"
+      },
+      {
+        "order": 7,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20150921111053-52TCuzZoH558qsLxPeUS0-v4"
+      },
+      {
+        "order": 8,
+        "image": "http://imgfiles.plaync.com/file/MXM/download/20160104185458-58nqGf7x1BYqsIkRrK510-v4"
+      }
+    ]
+  },
+  "message": "OK",
+  "result": "000"
+}
