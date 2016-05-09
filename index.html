@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title> NC COMIX </title>
+    <title> NC COMIX </title>
 
-  <!-- META -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="keywords" content="back office">
-  <meta name="description" content="Back Office for NC COMIX">
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="icon" sizes="192x192" href="/public/images/android-desktop.png">
+    <!-- StyleSheets -->
+    <link rel="stylesheet" type="text/css" href="/public/style/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/public/bundle.css">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-  <link rel="apple-touch-icon-precomposed" href="/public/images/ios-desktop.png">
+    <!--[if lt IE 9]>
+    <![endif]-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
 
-  <!-- Tile icon for Win8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage" content="/public/images/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- requestAnimationFrame Polyfill -->
+    <script>
+        // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+        // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/public/images/favicon.png">
+        // requestAnimationFrame polyfill by Erik Möller. fixes from Paul Irish and Tino Zijdel
 
-  <!-- STYLESHEETS -->
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        // MIT license
 
-  <!-- Semantic UI & jQuery for Semantic UI -->
-  <script src="https://code.jquery.com/jquery-1.12.3.min.js" crossorigin="anonymous"></script>
-  <script src="/public/minified/polyfiller.js"></script>
+        (function() {
+            var lastTime = 0;
+            var vendors = ['ms', 'moz', 'webkit', 'o'];
+            for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+                window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+                window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame']
+                        || window[vendors[x]+'CancelRequestAnimationFrame'];
+            }
 
-  <!--[if IE]>
-  <script>
-    webshim.setOptions('basePath','/public/minified/shims/');
-    webshim.polyfill();
-  </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.2.0/es5-shim.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-  <![endif]-->
+            if (!window.requestAnimationFrame)
+                window.requestAnimationFrame = function(callback, element) {
+                    var currTime = new Date().getTime();
+                    var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+                    var id = window.setTimeout(function() { callback(currTime + timeToCall); },
+                            timeToCall);
+                    lastTime = currTime + timeToCall;
+                    return id;
+                };
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="/public/css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
-
-  <link rel="stylesheet" type="text/css" href="/public/bundle.css">
+            if (!window.cancelAnimationFrame)
+                window.cancelAnimationFrame = function(id) {
+                    clearTimeout(id);
+                };
+        }());
+    </script>
 </head>
 <body>
-  <div id="root"></div>
-  <script src="/public/bundle.js"></script>
+    <div id="ncc-root"></div>
+    <!--<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>-->
+    <script src="/public/bundle.js"></script>
 </body>
 </html>
