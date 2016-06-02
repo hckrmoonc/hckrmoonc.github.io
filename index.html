@@ -60,6 +60,12 @@
             width: 300px;
             height: 400px;
             margin: auto;
+            transform: scale(1, 1);
+            animation: bigger 0.4s infinite linear;
+        }
+        
+        @keyframes bigger {
+            100% { transform: scale(2, 2); }
         }
     </style>
     <img src="public/images/ice.jpeg" />
