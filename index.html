@@ -64,10 +64,8 @@
     if (qs['comiccon'] === 'app') {
         window.history.replaceState({}, '', location.pathname);
 
-        alert('Browser => ' +  window.__BROWSER__.isiOS);
-
         /** iOS 만 앱으로 이동 */
-        if (window.__BROWSER__.isiOS) {
+        if (true) {
             alert('start');
             
             var AppProps = {
