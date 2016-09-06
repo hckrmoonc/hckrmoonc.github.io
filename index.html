@@ -47,6 +47,44 @@
     <script type='text/javascript'>
         Kakao.init('bfabd2be86ad753d3cab740f4831d051');
     </script>
+    
+    <script>
+        !function() {
+    var qs = {};
+    var queries = location.search.substring(1).split('&') || [];
+    for(var i = 0; i < queries.length; i++) {
+        if (queries[i]) {
+            (function() {
+                var pair = queries[i].split('=');
+                qs[pair[0]] = pair[1];
+            })();
+        }
+    }
+
+    if (qs['comiccon'] === 'app') {
+        window.history.replaceState({}, '', location.pathname);
+
+        /** iOS 만 앱으로 이동 */
+        if (window.__BROWSER__.isiOS) {
+            var AppProps = {
+                appId: '1142876962',
+                baseUrl: 'nccomix://link?'
+            };
+            var applink = '',
+                storeLink = 'https://itunes.apple.com/app/id1142876962';
+
+            /** Main 호출 **/
+            applink = AppProps.baseUrl;
+
+            location.assign(applink);
+
+            setTimeout(function () {
+                location.assign(storeLink);
+            }, 300);
+        }
+    }
+}();
+    </script>
 </head>
 <body>
 
